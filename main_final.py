@@ -18,7 +18,7 @@ with open(text, 'r') as file:
         payload = { "url": f"{url_https}" }
         headers = {
             "accept": "application/json",
-            "x-apikey": "a5dfadc88d5a7aef293d8759ee3e540dc6ef410c6a1017ffdf11f2c9617a88f4",
+            "x-apikey": "virustotal API",#API
             "content-type": "application/x-www-form-urlencoded"
         }
 
@@ -30,13 +30,13 @@ with open(text, 'r') as file:
         url_id=(url+"/"+id)
         headers1 = {
             "accept": "application/json",
-            "x-apikey": "a5dfadc88d5a7aef293d8759ee3e540dc6ef410c6a1017ffdf11f2c9617a88f4"
+            "x-apikey": "virustotal API",#API
         }
         response = requests.get(url_id, headers=headers1)
         url_vote=(url+"/"+id+"/votes?limit=10")
         headers = {
             "accept": "application/json",
-            "x-apikey": "a5dfadc88d5a7aef293d8759ee3e540dc6ef410c6a1017ffdf11f2c9617a88f4"
+            "x-apikey": "virustotal API",#API
         }
 
         response_vote = requests.get(url_vote, headers=headers)
