@@ -1,12 +1,56 @@
 # Website-Checker-Using-ML-model
 
+# Identifying Malicious Websites Using Python Machine Learning
 
-Identifying Malicious Websites Using Python Machine Learning
-Introduction
-The Python code used lo identity dangerous phishing websites is explained in this article. The algorithm uses a variety of characteristcs from the URL and webste structure to classify websites as malware. "phishing.""benign." or "defacement
- Statement
-The case study you menbon addresses the topic of mult-class classification in the context of malcous URL Getecton The URLs are aivided into four groups: defacement. malare phishing. and benign (or sate). in cybersecurity, this categorizaton is essenbal since & protects users from hazardous informaton and helps identty possible dangers
- Work Flow
-Three distinct machine learning models-Random Forest, XGBoost, and LightGBM-are useg by the Python code in the case study to carry out this categorization A dataset of URLs is used to train and test each model, and the accuracy of each model is computed and reported. A tunction to guess the dlass of a given URL is aliso induded in the code. This functon puls various nformation trom the URL, induding the length of the URLthe exstence of suspicous terms, the presence of particular characters, and the number d directones. The LightGBM model then uses these attributes as input to forecast the URL's class
- Dataset
-We are going to use a dataset e 6,51.191 malicious URLs, of which 32.520 are malware URLs, 94,111 are phishing URLs, 4,28.103 are benign or safe URLs,and 96,457 are defacement URLs. Let's now talk about the various kinds of URLs that are included in our dataset. benign, malicious, phishing. and defacement URLs.
+## Introduction
+
+This project focuses on identifying malicious websites using Python and Machine Learning techniques. The system analyzes various characteristics of URLs and website structures to classify websites into four categories: **Malware**, **Phishing**, **Defacement**, and **Benign (Safe)**. By leveraging machine learning algorithms, the solution helps improve cybersecurity by detecting potentially harmful websites before users interact with them.
+
+## Problem Statement
+
+This case study addresses the problem of **multi-class classification** in the context of malicious URL detection. URLs are categorized into four classes:
+
+* **Benign (Safe)** – Legitimate and non-malicious websites.
+* **Phishing** – Websites designed to steal sensitive information such as usernames, passwords, and financial data.
+* **Malware** – Websites that distribute malicious software or harmful code.
+* **Defacement** – Websites that have been compromised and modified by attackers.
+
+Accurate classification of these URLs is critical for protecting users from cyber threats and enhancing online security.
+
+## Workflow
+
+The solution uses three machine learning models:
+
+* **Random Forest**
+* **XGBoost**
+* **LightGBM**
+
+Each model is trained and evaluated using a labeled dataset of URLs. The performance of each model is measured and compared using classification accuracy and other evaluation metrics.
+
+A prediction function is also implemented to classify new URLs. This function extracts various features from the URL, including:
+
+* URL length
+* Presence of suspicious keywords
+* Number of special characters
+* Number of redirects
+* Domain-related attributes
+* Structural URL characteristics
+
+These extracted features are then passed to the trained LightGBM model, which predicts the category of the URL.
+
+## Dataset
+
+The dataset contains **651,191 URLs**, distributed as follows:
+
+| URL Type      |   Count |
+| ------------- | ------: |
+| Benign (Safe) | 428,103 |
+| Defacement    |  96,457 |
+| Phishing      |  94,111 |
+| Malware       |  32,520 |
+
+This diverse dataset enables the machine learning models to learn patterns associated with both malicious and legitimate websites, resulting in improved detection accuracy and classification performance.
+
+## Conclusion
+
+By combining feature engineering with advanced machine learning algorithms such as Random Forest, XGBoost, and LightGBM, this project provides an effective solution for detecting malicious websites. The system can help organizations and users identify cyber threats early and improve overall web security.
